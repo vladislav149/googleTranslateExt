@@ -15,8 +15,8 @@ document.addEventListener('keydown', e => {
   const sourceLanguage = document.querySelector('.source-language')
   const russianLanguage = sourceLanguage.textContent === 'Русский'
   const englishLanguage = sourceLanguage.textContent === 'Английский'
-  const russianLetter = enKeyCodes[e.key.toLowerCase()]
-  const englishLetter = ruKeyCodes[e.key.toLowerCase()]
+  const russianLetter = enKeyCodes[e.key]
+  const englishLetter = ruKeyCodes[e.key]
 
   if (e.ctrlKey && e.code === 'KeyV') {
     setTimeout(() => {
@@ -57,7 +57,7 @@ function focusOnField(element) {
 
 function changeLetter(e, letter) {
   setTimeout(() => {
-    const index = TEXT_AREA.value.indexOf(e.key.toLowerCase())
+    const index = TEXT_AREA.value.indexOf(e.key)
     TEXT_AREA.value =
       TEXT_AREA.value.slice(0, index) +
       letter +
