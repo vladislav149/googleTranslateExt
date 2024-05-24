@@ -1,8 +1,8 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Upgrade Google Translate",
   "version": "2.2",
-  "permissions": [
+  "host_permissions": [
     "https://www.google.com/search?q=%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA*"
   ],
   "content_scripts": [
